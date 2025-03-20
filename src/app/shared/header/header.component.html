@@ -1,1 +1,9 @@
-<p>header works!</p>
+<header>
+    <nav>
+        <ul>
+            @for (navItem of navMenu; track $index) {
+                <li>{{navItem}}</li>
+            }
+        </ul>
+    </nav>
+</header>

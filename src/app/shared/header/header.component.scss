@@ -1,0 +1,7 @@
+@use '../../../styles/variables' as v;
+
+
+header{
+    background-color: v.$customBlue;
+    color: v.$customYellow;
+}

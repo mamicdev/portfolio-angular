@@ -1,1 +1,13 @@
-<p>footer works!</p>
+<footer>
+    <div>
+        @for (footerMenuElement of footerMenu; track $index) {
+            <ul>
+                <h6>{{footerMenuElement.footerSubTitle}}</h6>
+                @for (footerContentListElement of footerMenuElement.footerContentsList; track $index) {
+                    <li>{{footerContentListElement}}</li>
+                }
+            </ul>
+        }
+        
+    </div>
+</footer>

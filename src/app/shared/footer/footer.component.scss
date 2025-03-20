@@ -1,0 +1,20 @@
+@use '../../../styles/variables' as v;
+
+footer{
+    background-color: v.$customBlue;
+    color: v.$customYellow;
+
+    div{
+
+         ul{
+            h6{
+                color: v.$shadeWhite;
+                font-size: larger;
+            }
+
+            li{
+
+            }
+         }
+    }
+}
