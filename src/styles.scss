@@ -18,10 +18,14 @@ html {
 
         a {
             text-decoration: none;
-            color: v.$customYellow;
+            color: v.$grey;
 
             &:hover {
-                color: v.$lightWhite;
+                color: v.$vibrantOrangeShade;
+            }
+
+            &.activated_link {
+                color: v.$vibrantOrangeShade;
             }
         }
 
@@ -43,7 +47,6 @@ html {
 
 
         header,
-        main,
         footer {
             max-width: 2600px;
             margin: 0 auto;
@@ -51,12 +54,7 @@ html {
         }
 
 
-        header,
-        footer {
-            background-image: radial-gradient(v.$customYellow 0.5px, transparent 1px);
-            background-size: 20px 20px;
-            background-attachment: fixed;
-        }
+
 
     }
 

@@ -14,11 +14,13 @@ header {
             justify-content: center;
 
             li {
-                border: solid 2px #fff;
 
                 a {
                     display: block;
                     padding: 10px 30px;
+                    background-color: v.$customBlue;
+                    font-size: larger;
+                    font-weight: 300;
                 }
             }
         }

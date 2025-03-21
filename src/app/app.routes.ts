@@ -5,16 +5,20 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
 import { EcommerceComponent } from './ecommerce/ecommerce.component';
 
 export const routes: Routes = [
-    {   path:'',
+    {
+        path: '',
         component: LandingpageComponent,
     },
-    {   path:'newspaper',
+    {
+        path: 'newspaper',
         component: NewspaperComponent,
     },
-    {   path:'restaurant',
+    {
+        path: 'restaurant',
         component: RestaurantComponent,
     },
-    {   path:'ecommerce',
+    {
+        path: 'ecommerce',
         component: EcommerceComponent,
     }
 ];

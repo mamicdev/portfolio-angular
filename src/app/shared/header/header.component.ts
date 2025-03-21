@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 type headerNavLinks = {
   linkName: string;
@@ -8,15 +8,15 @@ type headerNavLinks = {
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   navMenu: headerNavLinks[] = [
-    {linkName: "Home", relativeUrl: "/"}, 
-    {linkName: "Newspaper", relativeUrl: "/newspaper"},
-    {linkName: "Restaurant", relativeUrl: "/restaurant"},
-    {linkName: "E-commerce", relativeUrl: "/ecommerce"}
-  ]; 
+    { linkName: "Home", relativeUrl: "/" },
+    { linkName: "Newspaper", relativeUrl: "/newspaper" },
+    { linkName: "Restaurant", relativeUrl: "/restaurant" },
+    { linkName: "E-commerce", relativeUrl: "/ecommerce" }
+  ];
 }

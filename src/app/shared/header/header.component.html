@@ -2,9 +2,12 @@
     <nav>
         <ul>
             @for (navElement of navMenu; track $index) {
-                <li>
-                    <a [routerLink]="navElement.relativeUrl">{{navElement.linkName}}</a>
-                </li>
+            <li>
+                <a [routerLink]="navElement.relativeUrl" routerLinkActive="activated_link"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    {{navElement.linkName}}
+                </a>
+            </li>
             }
         </ul>
     </nav>
