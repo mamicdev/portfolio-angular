@@ -1,20 +1,38 @@
 @use '../../../styles/variables' as v;
 
-footer{
+footer {
     background-color: v.$customBlue;
     color: v.$customYellow;
 
-    div{
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
-         ul{
-            h6{
+        ul {
+            h6 {
                 color: v.$shadeWhite;
                 font-size: larger;
+                padding: 10px 30px;
             }
 
-            li{
-
+            li {
+                a {
+                    display: inline-block;
+                    padding: 10px 30px;
+                    border: solid 2px #fff;
+                }
             }
-         }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 600px) {
+    footer {
+        div {
+            flex-direction: row;
+        }
     }
 }

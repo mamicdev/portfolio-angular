@@ -1,16 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@use './styles/variables' as v;
 
-*{
-    padding: 0;
-    margin: 0;
+html {
 
-}
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
 
-body{
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-
-    main{
-        min-height: 500px;
     }
+
+
+
+    body {
+        font-family: 'Roboto', sans-serif;
+
+
+        a {
+            text-decoration: none;
+            color: v.$customYellow;
+
+            &:hover {
+                color: v.$lightWhite;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        header {
+            min-height: 150px;
+        }
+
+        main {
+            min-height: 500px;
+        }
+
+        footer {
+            min-height: 350px;
+        }
+
+
+        header,
+        main,
+        footer {
+            max-width: 2600px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+
+        header,
+        footer {
+            background-image: radial-gradient(v.$customYellow 0.5px, transparent 1px);
+            background-size: 20px 20px;
+            background-attachment: fixed;
+        }
+
+    }
+
+
 }

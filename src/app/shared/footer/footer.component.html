@@ -1,13 +1,15 @@
 <footer>
     <div>
         @for (footerMenuElement of footerMenu; track $index) {
-            <ul>
-                <h6>{{footerMenuElement.footerSubTitle}}</h6>
-                @for (footerContentListElement of footerMenuElement.footerContentsList; track $index) {
-                    <li>{{footerContentListElement}}</li>
-                }
-            </ul>
+        <ul>
+            <h6>{{footerMenuElement.footerSubTitle}}</h6>
+            @for (footerContentListElement of footerMenuElement.footerContentsList; track $index) {
+            <li>
+                <a [routerLink]="footerContentListElement.relativeUrl">{{footerContentListElement.footerLinkName}}</a>
+            </li>
+            }
+        </ul>
         }
-        
+
     </div>
 </footer>

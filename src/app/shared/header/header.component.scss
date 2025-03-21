@@ -1,7 +1,37 @@
 @use '../../../styles/variables' as v;
 
 
-header{
+header {
     background-color: v.$customBlue;
     color: v.$customYellow;
+
+    nav {
+        padding: 20px 0;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            li {
+                border: solid 2px #fff;
+
+                a {
+                    display: block;
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        nav {
+
+            ul {
+                flex-direction: row;
+            }
+        }
+    }
 }

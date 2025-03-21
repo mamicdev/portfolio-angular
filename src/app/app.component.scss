@@ -1,5 +1,7 @@
 @use '../styles/variables' as v;
 
+
 main{
     background-color: v.$customBlue;
+    color: v.$shadeWhite;
 }
