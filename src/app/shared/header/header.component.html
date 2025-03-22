@@ -1,14 +1,16 @@
 <header>
-    <nav>
-        <ul>
-            @for (navElement of navMenu; track $index) {
-            <li>
-                <a [routerLink]="navElement.relativeUrl" routerLinkActive="activated_link"
-                    [routerLinkActiveOptions]="{ exact: true }">
-                    {{navElement.linkName}}
-                </a>
-            </li>
-            }
-        </ul>
-    </nav>
+
+    <select>
+        <option value="en">🇬🇧 English</option>
+        <option value="fr">🇫🇷 French</option>
+        <option value="mg">🇲🇬 Malagasy</option>
+    </select>
+
+    <select>
+        <option value="en">🌙 Dark</option>
+        <option value="fr">🌞 Light</option>
+        <option value="mg">⌚ Auto</option>
+    </select>
+
+
 </header>

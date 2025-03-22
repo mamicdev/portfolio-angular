@@ -1,0 +1,33 @@
+@use '../../../styles/variables' as v;
+
+
+nav {
+    padding: 20px 0;
+    background-color: v.$onyx;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        li {
+
+            a {
+                display: block;
+                padding: 10px 30px;
+                font-size: larger;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    nav {
+
+        ul {
+            flex-direction: row;
+        }
+    }
+}

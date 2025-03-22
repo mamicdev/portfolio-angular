@@ -1,10 +1,55 @@
 @use '../../styles/variables' as v;
 
 div.homeLandingPageContainer {
-    background-image: radial-gradient(v.$darkCharcoal 0.5px, transparent 1px);
-    background-size: 20px 20px;
+    background-image: radial-gradient(v.$customYellow 0.4px, transparent 1px);
+    background-size: 8px 8px;
     background-attachment: fixed;
 
-    min-height: 500px;
-    background-color: v.$grey;
+    min-height: 900px;
+    background-color: v.$onyx;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    div.introduction,
+    aside {
+        background-color: v.$onyx;
+
+        border: solid 2px #fff;
+    }
+
+    div.introduction {
+        flex-grow: 3;
+        padding: 10px;
+
+        section {
+            article.profile {
+
+                img {
+                    max-width: 150px;
+                    border: 10px solid v.$shadeWhite;
+                    border-radius: 50%;
+                }
+
+            }
+        }
+    }
+
+    aside {
+        flex-grow: 2;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 600px) {
+    div.homeLandingPageContainer {
+        flex-direction: row;
+
+        div.introduction {}
+    }
 }

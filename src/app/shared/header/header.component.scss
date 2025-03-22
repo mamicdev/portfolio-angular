@@ -2,38 +2,13 @@
 
 
 header {
-    background-color: v.$customBlue;
+    background-color: v.$onyx;
     color: v.$customYellow;
 
-    nav {
-        padding: 20px 0;
-
-        ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            li {
-
-                a {
-                    display: block;
-                    padding: 10px 30px;
-                    background-color: v.$customBlue;
-                    font-size: larger;
-                    font-weight: 300;
-                }
-            }
-        }
+    select {
+        background-color: v.$smoothDarkGrey;
+        color: v.$silver;
     }
-}
 
-@media screen and (min-width: 600px) {
-    header {
-        nav {
 
-            ul {
-                flex-direction: row;
-            }
-        }
-    }
 }

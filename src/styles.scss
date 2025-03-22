@@ -2,6 +2,10 @@
 @use './styles/variables' as v;
 
 html {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 
     * {
         box-sizing: border-box;
@@ -21,11 +25,11 @@ html {
             color: v.$grey;
 
             &:hover {
-                color: v.$vibrantOrangeShade;
+                color: v.$orangeYellowCrayola;
             }
 
             &.activated_link {
-                color: v.$vibrantOrangeShade;
+                color: v.$orangeYellowCrayola;
             }
         }
 
@@ -34,11 +38,11 @@ html {
         }
 
         header {
-            min-height: 150px;
+            min-height: 50px;
         }
 
         main {
-            min-height: 500px;
+            min-height: 800px;
         }
 
         footer {
@@ -47,6 +51,7 @@ html {
 
 
         header,
+        main,
         footer {
             max-width: 2600px;
             margin: 0 auto;
